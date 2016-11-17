@@ -9,7 +9,6 @@ class LoginRestHandler extends SimpleRest {
 		
 		$dao = new UsuarioDaoImpl();
 		$rawData = $dao->login($user,$password);
-		echo $rawData->id.$rawData->usuario;
 		if(empty($rawData)) {
 			$statusCode = 404;
 			$rawData = array('error' => 'Problemas al loguear');		
