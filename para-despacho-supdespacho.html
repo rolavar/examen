@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>TD - Gestión de despacho</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  <!-- container section start -->
+  <section id="container" class="">
+      <!--header start-->
+      <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index_supdespacho.html" class="logo">Módulo <span class="lite">Despacho</span></a>
+            <!--logo end-->
+
+
+            <div class="top-nav notification-row">                
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+                    
+                    <!-- user login dropdown start-->
+                     <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="username">Supervisor de Despacho</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="profile4.html"><i class="icon_profile"></i> Mi cuenta</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="icon_key_alt"></i> Salir</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+
+
+   <script language="JavaScript">
+  
+        function popup(url,ancho,alto) {
+        var posicion_x; 
+        var posicion_y; 
+        posicion_x=(screen.width/2)-(ancho/2); 
+        posicion_y=(screen.height/2)-(alto/2); 
+        window.open(url, "Orden de Compra", "width="+ancho+",height="+alto+         ",menubar=0,toolbar=0,directories=0,scrollbars=no,resizable=no,left="+posicion_x+",top="+posicion_y+"");
+                  }
+    </script>
+
+
+</header>     
+      <!--header end-->
+
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+                  <li class="active">
+                      <a class="" href="index_supdespacho.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Inicio</span>
+                      </a>
+                  </li>
+                   <li>
+                      <a class="" href="para-despacho-supdespacho.html">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                          <span>Gestión de Despacho</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="fa fa-truck"></i>
+                          <span>Gestión Flota</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="vehiculos_supdespacho.html"><i class="fa fa-truck"></i>Vehículos</a></li>
+                      </ul>
+                  </li> 
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+		  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-files-o"></i> Gestión de Despacho</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index_supdespacho.html">Inicio</a></li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i><a href="para-despacho-supdespacho.html">Gestión de Despacho</a></li>
+					</ol>
+				</div>
+			</div>                  
+      </section>
+
+ <div id="table-ppal" class="table-container">
+  <table width="90%">
+    <tr>
+      <td><strong>Patente</strong></td>
+      <td><b> Zona </b> </td>
+      <td><b> Chofer </b> </td>
+      <td><b> Ayudante </b> </td>
+      <td><b> Fecha y hora </b> </td>
+      <td><b> Órdenes de Compra </b> </td>
+      <td><b> Estado </b> </td>
+      <td><b> </b> </td>
+    </tr>
+
+    <tr class="even">
+      <td> <a href="#" onClick="popup('bitacora1.html',580,500)"> HD-8100 </a></td>
+      <td> <select>
+          <option value="proceso" selected>Sur</option>
+          <option value="encurso">Norte</option>
+          <option value="encurso">Centro</option>
+          <option value="encurso">Oriente</option>
+          <option value="encurso">Poniente</option>
+      </select> </td>
+      <td> <select>
+          <option value="proceso" selected>Luis Gutiérrez</option>
+          <option value="encurso">Felipe Valenzuela</option>
+          <option value="encurso">Ignacio Olate</option>
+          <option value="encurso">José Peréz</option>
+      </select>  </td>
+      <td> <select>
+          <option value="proceso" selected>Jehison Contreras</option>
+          <option value="encurso">Diego Flores</option>
+          <option value="encurso">Emanuel Roman</option>
+          <option value="encurso">Marco Mora</option>
+      </select></td> 
+    <td> 25-08-2010 20:55</td>
+    </td> <td> <a href="#" onClick="popup('otveh01.html',580,500)">Ver</a> </td>
+    <td> <select>
+          <option value="opcion" selected>En Proceso de despacho</option>
+          <option value="encamion">Despacho en curso</option> 
+          </select></td>
+    <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">Entrega Realizada</button></td>
+    </tr>
+
+    <tr>
+      <td> <a href="#" onClick="popup('bitacora2.html',580,500)"> FR-4052 </a></td>
+      <td> <select>
+          <option value="proceso" selected>Oriente</option>
+          <option value="encurso">Norte</option>
+          <option value="encurso">Sur</option>
+          <option value="encurso">Centro</option>
+          <option value="encurso">Poniente</option>
+      </select> </td>
+      <td> <select>
+          <option value="proceso" selected>Felipe Valenzuela</option>
+          <option value="encurso">Luis Gutiérrez</option>
+          <option value="encurso">Ignacio Olate</option>
+          <option value="encurso">José Peréz</option>
+      </select> </td>
+      <td> <select>
+          <option value="proceso" selected>Diego Flores</option>
+          <option value="encurso">Jehison Contreras</option>
+          <option value="encurso">Emanuel Roman</option>
+          <option value="encurso">Marco Mora</option>
+          
+    </td> <td> 25-08-2010 20:55</td>
+    </td> <td> <a href="#" onClick="popup('otveh02.html',580,500)">Ver</a> </td>
+    <td> <select>
+          <option value="opcion" selected>En Proceso de despacho</option>
+          <option value="encamion">Despacho en curso</option> 
+          </select></td>
+    <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">Entrega Realizada</button></td>
+    </tr>
+
+    <tr>
+      <td> <a href="#" onClick="popup('bitacora3.html',580,500)"> GM-0040 </a></td>
+      <td> <select>
+          <option value="proceso" selected>Centro</option>
+          <option value="encurso">Norte</option>
+          <option value="encurso">Sur</option>
+          <option value="encurso">Oriente</option>
+          <option value="encurso">Poniente</option>
+      </select> </td>
+      <td> <select>
+          <option value="proceso" selected>Ignacio Olate</option>
+          <option value="encurso">Luis Gutierrez</option>
+          <option value="encurso">Felipe Valenzuela</option>
+          <option value="encurso">Jose Peréz</option>
+      </select>  </td>
+      <td> <select>
+          <option value="proceso" selected>Emanuel Roman</option>
+          <option value="encurso">Diego Flores</option>
+          <option value="encurso">Jehison Contreras</option>
+          <option value="encurso">Marco Mora</option>
+    </td> <td> 25-08-2010 20:55</td>
+    </td> <td> <a href="#" onClick="popup('otveh03.html',580,500)">Ver</a> </td>
+    <td> <select>
+          <option value="opcion" selected>En Proceso de despacho</option>
+          <option value="encamion">Despacho en curso</option> 
+          </select></td>
+    <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">Entrega Realizada</button></td>
+    </tr>
+
+    <tr class="even">
+      <td> <a href="#" onClick="popup('bitacora4.html',580,500)"> DF-4534 </a></td>
+      <td> <select>
+          <option value="proceso" selected>Poniente</option>
+          <option value="encurso">Norte</option>
+          <option value="encurso">Sur</option>
+          <option value="encurso">Centro</option>
+          <option value="encurso">Oriente</option>
+       </select> </td>
+      <td> <select>
+          <option value="proceso" selected>José Peréz</option>
+          <option value="encurso">Felipe Valenzuela</option>
+          <option value="encurso">Ignacio Olate</option>
+          <option value="encurso">Luis Gutiérrez</option>
+      </select>  </td>
+      <td> <select>
+          <option value="proceso" selected>Marco Mora</option>
+          <option value="encurso">Diego Flores</option>
+          <option value="encurso">Emanuel Roman</option>
+          <option value="encurso">Jehison Contreras</option>
+    </td> <td> 25-08-2010 20:55</td>
+    </td> <td> <a href="#" onClick="popup('otveh04.html',580,500)">Ver</a> </td>
+    <td> <select>
+          <option value="opcion" selected>En Proceso de despacho</option>
+          <option value="encamion">Despacho en curso</option> 
+          </select></td>
+    <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">Entrega Realizada</button></td>
+    </tr>
+  </table>
+</div>
+
+</div>     
+
+
+
+      <!--main content end-->
+  </section>
+  <!-- container section end -->
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- jquery validate js -->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>    
+
+
+  </body>
+</html>

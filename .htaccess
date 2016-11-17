@@ -1,0 +1,7 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^rest/login/([a-z]+)/([a-zA-Z0-9]+)/$	RestController.php?view=login&user=$1&password=$2 [nc,qsa]
+RewriteRule ^rest/login2/([^\.]+)$	RestController.php?view=login2&json=$1 [nc,qsa]

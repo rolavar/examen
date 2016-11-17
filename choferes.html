@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>TD - Choferes</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  <!-- container section start -->
+  <section id="container" class="">
+      <!--header start-->
+      <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index_admingral.html" class="logo">Módulo <span class="lite">Despacho</span></a>
+            <!--logo end-->
+
+
+            <div class="top-nav notification-row">                
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+                    <!-- user login dropdown start-->
+                     <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="username">Administrador General</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="profile.html"><i class="icon_profile"></i> Mi cuenta</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="icon_key_alt"></i> Salir</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+      </header>      
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+                 <li class="active">
+                      <a class="" href="index_admingral.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Inicio</span>
+                      </a>
+                  </li>
+                                                    
+                  <li class="sub-menu">
+                      <a href="ordencompra.html" class="">
+                          <i class="fa fa-barcode"></i>
+                          <span>Órdenes de Compra</span>
+                      </a>
+                  </li>  
+                  
+                  <li>
+                      <a class="" href="para-despacho.html">
+                          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        <!--  <i class="fa fa-exclamation-triangle"></i>-->
+                          <span>Gestión de Despacho</span>
+                      </a>
+                  </li>
+                  
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="fa fa-truck"></i>
+                          <span>Gestión Flota</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="vehiculos.html"><i class="fa fa-truck"></i>Vehículos</a></li>
+                          <li><a class="" href="choferes.html"><i class="fa fa-male"></i>Choferes</a></li>
+                          <li><a class="" href="ayudantes.html"><i class="fa fa-male" aria-hidden="true"></i>Ayudantes</a></li>    
+                                             
+                      </ul>
+                  </li>    
+                  <li>
+                      <a class="" href="conformidad.html">
+                          <i class="fa fa-star"></i>
+                          <span>Conformidad Cliente</span>
+                      </a>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+		  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-files-o"></i> Choferes</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index_admingral.html">Inicio</a></li>
+            <li><em class="fa fa-male"></em><a href="choferes.html"> Choferes</a></li>
+					</ol>
+				</div>
+			</div>                  
+      </section>
+
+
+ <div class="panel-body bio-graph-info">
+   <h1>Mantención de Choferes</h1>
+ </div>
+
+ <div class="table-container">
+  <table width="90%">
+    <tr>
+      <td><strong>Rut</strong><br></td>
+      <td><strong>Nombre</strong></td>
+      <td><strong> Licencia</strong></td>
+      <td><strong> Disponible</strong></td>
+    </tr>
+    <tr class="even">
+      <td> 15571259-7</td>
+      <td>OCTAVIO RIQUELME JERIA </td>
+      <td>A2</td>
+      <td> <select>
+          <option value="proceso" selected>Si</option>
+          <option value="encurso">No</option>
+      </select> 
+    </td>
+    </tr>
+    <tr>
+      <td> 10985453-8</td>
+      <td>RAMON ULLOA SALGADO </td>
+      <td>A4</td>
+      <td> <select>
+          <option value="proceso">Si</option>
+          <option value="encurso" selected>No</option>
+      </select> 
+    </td>
+    </tr>
+    <tr>
+      <td>14666589-2 </td>
+      <td>MANUEL ORDENES SUAREZ </td>
+      <td>A4 </td>
+      <td> <select>
+          <option value="proceso" selected>Si</option>
+          <option value="encurso">No</option>
+      </select> 
+    </td>
+    </tr>
+    <tr class="even">
+      <td>10555698-8 </td>
+      <td>JULIO OLGUIN SOTO </td>
+      <td>A2 </td>
+      <td> <select>
+          <option value="proceso">Si</option>
+          <option value="encurso" selected>No</option>
+      </select> 
+    </td>
+    </tr>
+  </table>
+</div>
+
+</div>     
+
+      <!--main content end-->
+  </section>
+  <!-- container section end -->
+
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- jquery validate js -->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>    
+
+
+  </body>
+</html>

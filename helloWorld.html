@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="appCtrl as vm">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<input type="text" name="" id="" ng-model="vm.campoTexto">
+	</br>
+	{{ vm.campoTexto }} - {{ vm.campoSelect }}
+	</br>
+	<select ng-model="vm.campoSelect">
+		<option value="uno">1</option>
+		<option value="dos">2</option>
+	</select>
+
+	<input type="button" ng-click="vm.cambiarTexto()" value="boton iniciar">
+	<hr>
+	<input type="button" ng-click="vm.agregarTexto()" value="agregar Texto">
+	</br>
+
+	<ul>
+		<li ng-repeat="actual in vm.textos">
+			{{ actual }}
+		</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+	<script type="text/javascript">
+
+		var app = angular.module("app",[]);
+		app.controller("appCtrl",function(){
+			var ts = this;
+			ts.campoSelect = 'uno';
+			ts.campoTexto = "prueba inicializacion";
+
+			ts.textos = [];
+
+
+			ts.cambiarTexto = function(){
+				ts.campoTexto = "Cambio desde metodo CambiarTexto()";
+			}
+
+			ts.agregarTexto = function(){
+				ts.textos.push(ts.campoTexto);
+			}
+		});
+
+	</script>
+
+</body>
+</html>
+

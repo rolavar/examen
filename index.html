@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html ng-app="app" ng-controller="examenCtrl as vm">
+<head > 
+<title>TD - Acceso a Módulo de despacho</title>
+<link href="css/styleLogin.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+<!--web-fonts-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.8.3.min.js"></script>
+<!--web-fonts-->
+</head>
+<body>
+			<div class="main" >
+				<div class="login">
+					<h1>Acceso Módulo Despacho</h1>
+					<div class="login-bottom">
+					<div> &nbsp;</div><div> &nbsp;</div>
+					<form>
+						<input id="usuario" type="text" ng-model="vm.usuario" placeholder="Usuario">			
+						<input id="password" type="password" ng-model="vm.password" class="password" placeholder="Contraseña">
+
+						<br>					
+						<input id="enviar" type="button" ng-click="vm.testRest()" class="btn btn-default" value="Ingresar">
+					</form>
+					</div>
+				</div>
+				{{ vm.prueba }}
+			</div>
+		<div class="footer">
+			<p>&copy 2016 BoxShop - Módulo de Despacho. Todos los derechos reservados.</p>
+		</div>	
+
+
+
+<script >
+$( "#enviar" ).click(function() {
+
+  	var usuario = $("#usuario").val();
+  	var password = $("#password").val();
+
+  	if (!usuario || usuario.length === 0) {
+		alert( "Usuario inválido." );
+		return;
+  	}
+
+  	if (!password || password.length === 0) {
+		alert( "Password inválido." );
+		return;
+  	}
+
+});
+</script>
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/angular-resource.js"></script>
+<script src="js/appExamen.js"></script>
+<script src="js/controller/examenCtrl.js"></script>
+</body>
+</html>

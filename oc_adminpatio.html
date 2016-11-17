@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>TD - Orden de Compra</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <script language="JavaScript">
+        function popup(url,ancho,alto) {
+        var posicion_x; 
+        var posicion_y; 
+        posicion_x=(screen.width/2)-(ancho/2); 
+        posicion_y=(screen.height/2)-(alto/2); 
+        window.open(url, 'Orden de Compra', 'scrollbars=yes, width='+ancho+',height='+alto+',menubar=1,toolbar=no,directories=0,resizable=no,left='+posicion_x+",top="+posicion_y+"");
+                  }
+     </script>
+
+  </head>
+
+  <body>
+  <!-- container section start -->
+  <section id="container" class="">
+      <!--header start-->
+      <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index_adminpatio.html" class="logo">Módulo <span class="lite">Despacho</span></a>
+            <!--logo end-->
+
+
+            <div class="top-nav notification-row">                
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+                    <!-- task notificatoin end -->
+ 
+                    <!-- user login dropdown start-->
+                     <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="username">Administrador de Patio</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="profile2.html"><i class="icon_profile"></i> Mi cuenta</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="icon_key_alt"></i> Salir</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+      </header>      
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+                  <li class="active">
+                      <a class="" href="index_adminpatio.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Inicio</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="oc_adminpatio.html" class="">
+                          <i class="fa fa-barcode"></i>
+                          <span>Órdenes de Compra</span>
+                      </a>
+                  </li> 
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+		  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-files-o"></i> Orden de Compra</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index_adminpatio.html">Inicio</a></li>
+            <li><i class="fa fa-barcode"></i><a href="oc_adminpatio.html">Orden de Compra</a></li>
+					</ol>
+				</div>
+			</div>                  
+      </section>
+
+
+ <div class="table-container">
+  <table width="90%">
+    <tr>
+      <td><strong> N° Orden <i class="fa fa-angle-double-down"></i> </strong></td>
+      <td><b> Fecha </b> </td>
+      <td><b> Hora </b> </td>
+      <td><b> Cliente </b> </td>
+      <td><b> Dirección Despacho </b> </td>
+      <td><b> Cantidad artículos </b> </td>
+      <td><b> Vehículo Asignado </b> </td>
+      <td><b> Estado </b> </td>
+      <td><b>  </b> </td>
+    </tr>
+    <tr class="even">
+     
+      <td> <a href="#" onClick="popup('0111.html',580,500)">0111</a></td>
+      
+      <td> 02/08/2016 </td>
+      <td> 14:23 </td>
+      <td> Felipe González</td>
+      <td> Av. Las Acacias 23. San Bernardo. </td>
+      <td> <a target="_blank" href="ordencompra.html">4 </a></td>
+      <td> <select>
+          <option value="opcion" selected>Vehículo 01</option>
+          <option value="vehiculo02">Vehículo 02</option>
+          <option value="vehiculo03">Vehículo 03</option>
+          <option value="vehiculo04">Vehículo 04</option>
+      </select>  </td>
+      <td> <select>
+          <option value="opcion" selected>En Camión</option>
+          <option value="cargado">Cargado</option>
+          </select> 
+      </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+   </tr>
+
+    <tr>
+      <td> <a href="#" onClick="popup('0112.html',580,500)">0112</a></td>
+      <td> 03/08/2016 </td>
+      <td> 14:45 </td>
+      <td> Esteban Garrido </td>
+      <td> Pasaje Norte 345. Macul. </td>
+      <td> <a href="ordencompra.html">4 </a></td>
+      <td> <select>
+          <option value="opcion" selected>Vehículo 02</option>
+          <option value="vehiculo01">Vehículo 01</option>
+          <option value="vehiculo03">Vehículo 03</option>
+          <option value="vehiculo04">Vehículo 04</option>
+      </select>  </td>
+      <td> <select>
+          <option value="opcion" selected>Cargado</option>
+          <option value="encamion">En Camión</option> 
+          </select> 
+      </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+    </tr>
+    <tr>
+      <td> <a href="#" onClick="popup('0113.html',580,500)">0113</a></td>
+      <td> 03/08/2016 </td>
+      <td> 10:00 </td>
+      <td> Fernanda Muñoz </td>
+      <td> San Diego 45, dpto 2. Santiago. </td>
+      <td> <a href="ordencompra.html">4 </a></td>
+       <td> <select>
+          <option value="opcion" selected>Vehículo 03</option>
+          <option value="vehiculo01">Vehículo 01</option>
+          <option value="vehiculo02">Vehículo 02</option>
+          <option value="vehiculo04">Vehículo 04</option>
+      </select>  </td>
+      <td> <select>
+          <option value="opcion" selected>En Camión</option>
+          <option value="cargado">Cargado</option> 
+      </select> 
+    </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+    </tr>
+    <tr class="even">
+      <td> <a href="#" onClick="popup('0114.html',580,500)">0114</a></td>
+      <td> 04/08/2016 </td>
+      <td> 15:15 </td>
+      <td> Eduardo Tello </td>
+      <td> Av. Pajaritos 456. Maipú. </td>
+      <td> <a href="#" onClick="popup('0114.html',580,500)">4 </a></td>
+       <td> <select>
+          <option value="opcion" selected>Vehículo 04</option>
+          <option value="vehiculo01">Vehículo 01</option>
+          <option value="vehiculo02">Vehículo 02</option>
+          <option value="vehiculo03">Vehículo 03</option>
+      </select>  </td>
+      <td> <select>
+          <option value="encamion" selected>En Camión</option>
+          <option value="cargado">Cargado</option>           
+      </select> 
+    </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+    </tr>
+
+    <tr class="even">
+      <td> <a href="#" onClick="popup('0115.html',580,500)">0115</a></td>
+      <td> 05/08/2016 </td>
+      <td> 16:15 </td>
+      <td> José Velasquez </td>
+      <td> Calle las Toninas 547. Quilicura. </td>
+      <td> <a href="#" onClick="popup('0115.html',580,500)">2 </a></td>
+       <td> <select>
+          <option value="opcion" selected>Vehículo 04</option>
+          <option value="vehiculo01">Vehículo 01</option>
+          <option value="vehiculo02">Vehículo 02</option>
+          <option value="vehiculo03">Vehículo 03</option>
+      </select>  </td>
+      <td> <select>
+          <option value="encamion" selected>En Camión</option>
+          <option value="cargado">Cargado</option>           
+      </select> 
+       </td>
+       <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+    </tr>
+
+    <tr>
+      <td> <a href="#" onClick="popup('0116.html',580,500)">0116</a></td>
+      <td> 06/08/2016 </td>
+      <td> 14:45 </td>
+      <td> Roberto Aguayo </td>
+      <td> Pasaje Sur 888. Macul. </td>
+      <td> <a href="#" onClick="popup('0116.html',580,500)">4 </a></td>
+      <td> <select>
+          <option value="opcion" selected>Vehículo 02</option>
+          <option value="vehiculo01">Vehículo 01</option>
+          <option value="vehiculo03">Vehículo 03</option>
+          <option value="vehiculo04">Vehículo 04</option>
+      </select>  </td>
+      <td> <select>
+          <option value="opcion" selected>Cargado</option>
+          <option value="encamion">En Camión</option> 
+          </select> 
+      </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+    </tr>
+    
+    <tr>
+      <td> <a href="#" onClick="popup('0117.html',580,500)">0117</a></td>
+      <td> 06/08/2016 </td>
+      <td> 18:45 </td>
+      <td> Agustin Salvatierra </td>
+      <td> Pje. Gana 448. Santiago </td>
+      <td> <a href="#" onClick="popup('0117.html',580,500)">4 </a></td>
+      <td> <select>
+          <option value="opcion" selected>Vehículo 02</option>
+          <option value="vehiculo01">Vehículo 01</option>
+          <option value="vehiculo03">Vehículo 03</option>
+          <option value="vehiculo04">Vehículo 04</option>
+      </select>  </td>
+      <td> <select>
+          <option value="opcion" selected>Cargado</option>
+          <option value="encamion">En Camión</option> 
+          </select> 
+      </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+    </tr>
+    <tr class="even">
+     
+      <td> <a href="#" onClick="popup('0118.html',580,500)">0118</a></td>
+      
+      <td> 07/08/2016 </td>
+      <td> 10:23 </td>
+      <td> Jorge Ruminott </td>
+      <td> Av. Las Acacias 23. Puente Alto. </td>
+      <td> <a href="#" onClick="popup('0118.html',580,500)">4 </a></td>
+      <td> <select>
+          <option value="opcion" selected>Vehículo 01</option>
+          <option value="vehiculo02">Vehículo 02</option>
+          <option value="vehiculo03">Vehículo 03</option>
+          <option value="vehiculo04">Vehículo 04</option>
+      </select>  </td>
+      <td> <select>
+          <option value="opcion" selected>En Camión</option>
+          <option value="cargado">Cargado</option>
+          </select> 
+      </td>
+      <td><button type="submit" class="btn btn-primary btn-sm botonCorreo">En proceso de despacho</button></td>
+   </tr>
+   
+  </table>
+</div>
+
+</div>     
+  <!--main content end-->
+  </section>
+  <!-- container section end -->
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- jquery validate js -->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>    
+
+
+  </body>
+</html>
